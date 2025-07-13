@@ -2,36 +2,36 @@
 
 const HeroSection = () => {
   return (
-    <section id="home" className="pt-32 pb-16 bg-white">
+    <section id="home" className="pt-32 max-w-[85%] mx-auto pb-16 bg-white">
       <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
         {/* Left side text */}
         <div className="md:w-1/2">
-          <h1 className="text-4xl md:text-5xl font-bold leading-snug">
-            <span className="text-blue-600 italic font-semibold">Empowering</span>{" "}
+          <h1 className="text-[70px] md:text-5xl font-bold leading-snug">
+            <span className="text-[#02A2C7] italic font-bold">Empowering</span>{" "}
             Africa’s <br />
             Next Tech{" "}
-            <span className="text-blue-600 italic font-semibold">Generation.</span>
+            <span className="text-[#02A2C7] italic font-bold">Generation.</span>
           </h1>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600 max-w-[589px]">
             ZenTech Hub is a space for innovators who think beyond the ordinary.
             Join us to build something extraordinary.
           </p>
-          <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow">
+          <button className="mt-6 w-[370px] h-[44px44px] bg-[#0B2C7D] hover:bg-blue-800 text-white px-6 py-3 rounded-md shadow">
             Get Started
           </button>
         </div>
 
         {/* Right side images */}
-        <div className="md:w-1/2 grid grid-cols-2 gap-4">
-          {[1, 2, 3, 4].map((num) => (
+        <div className="md:w-1/2 flex flex-wrap">
+          {['/assets/hero1.png', '/assets/hero2.png', '/assets/hero3.png', '/assets/hero4.png'].map((href, num) => (
             <div
               key={num}
-              className="w-full h-32 md:h-40 rounded-lg overflow-hidden shadow"
+              className="w-[264px] p-0 h-[243px] md:h-[243px]"
             >
               <img
-                src={`/team-${num}.jpg`}
+                src={`${href}`}
                 alt={`Team ${num}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full p-0  object-cover"
               />
             </div>
           ))}
