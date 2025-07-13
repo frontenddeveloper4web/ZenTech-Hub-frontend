@@ -6,7 +6,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed  top-0 left-0 w-full bg-white shadow-md z-50">
+    <header className="fixed  top-0 left-0 w-full bg-gray-50 shadow-md z-50">
       <div className="container max-w-[85%] mx-auto flex justify-between items-center py-1 px-6">
         <div className="flex items-center gap-2">
           <img src="/assets/logo.svg" alt="ZenTech Hub" className="w-20 h-20" />
